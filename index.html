@@ -7,8 +7,40 @@
     <link rel="stylesheet" href="styles/Spinner.css">
 </head>
 <body>
-    
 
+     <div class="container">
+        <h1>🍽️ What to Eat Today?</h1>
+        <p class="subtitle">Let the wheel decide your delicious lunch!</p>
+        
+        <div class="wheel-container">
+            <div class="pointer"></div>
+            <div class="wheel" id="wheel">
+                <div class="segment" style="background: #ff6b6b; transform: rotate(0deg);">🍕 Pizza</div>
+                <div class="segment" style="background: #4ecdc4; transform: rotate(24deg);">🍔 Burger</div>
+                <div class="segment" style="background: #45b7d1; transform: rotate(48deg);">🍣 Sushi</div>
+                <div class="segment" style="background: #96ceb4; transform: rotate(72deg);">🍝 Pasta</div>
+                <div class="segment" style="background: #ffeaa7; transform: rotate(96deg);">🥗 Salad</div>
+                <div class="segment" style="background: #dda0dd; transform: rotate(120deg);">🌮 Tacos</div>
+                <div class="segment" style="background: #98d8c8; transform: rotate(144deg);">🥪 Sandwich</div>
+                <div class="segment" style="background: #f7dc6f; transform: rotate(168deg);">🍜 Ramen</div>
+                <div class="segment" style="background: #bb8fce; transform: rotate(192deg);">🍛 Thai Food</div>
+                <div class="segment" style="background: #85c1e9; transform: rotate(216deg);">🍛 Indian Food</div>
+                <div class="segment" style="background: #f8c471; transform: rotate(240deg);">🥡 Chinese Food</div>
+                <div class="segment" style="background: #ec7063; transform: rotate(264deg);">🍖 BBQ</div>
+                <div class="segment" style="background: #5dade2; transform: rotate(288deg);">🥙 Mediterranean</div>
+                <div class="segment" style="background: #58d68d; transform: rotate(312deg);">🍖 Korean BBQ</div>
+                <div class="segment" style="background: #f1948a; transform: rotate(336deg);">🍜 Pho</div>
+            </div>
+            <div class="center-circle">🎯</div>
+        </div>
+        
+        <button class="spin-button" id="spinButton" onclick="spinWheel()">
+            SPIN THE WHEEL!
+        </button>
+        
+        <div class="result" id="result"></div>
+    </div>
+    
 
     <script src="scripts/Spinner.js"></script>
 </body>
